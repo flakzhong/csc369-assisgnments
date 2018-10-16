@@ -1,0 +1,26 @@
+CSC369 A3 Self-Tester Script
+****************************
+This self-tester allows you to confirm that the course team will be able to clone your repo and compile your code. In addition, it also runs a subset of the test cases that will be used to grade your assignment.
+
+Cloning your Git repo...
+Running make...
+
+gcc -Wall -g -c sim.c
+gcc -Wall -g -c pagetable.c
+gcc -Wall -g -c swap.c
+gcc -Wall -g -c rand.c
+gcc -Wall -g -c clock.c
+gcc -Wall -g -c lru.c
+gcc -Wall -g -c fifo.c
+gcc -Wall -g -c opt.c
+gcc -Wall -g -o sim sim.o pagetable.o swap.o rand.o clock.o lru.o fifo.o opt.o
+
+Make succeeded! Running traces and diffing output...
+
+Mark for pagetable implementation: 0/2
+Mark for opt: 0/2
+Mark for fifo: 0/2
+Mark for lru: 0/2
+Mark for clock: 0/2
+
+Total Mark: 0/10

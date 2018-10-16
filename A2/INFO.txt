@@ -1,0 +1,13 @@
+Name: Xuhong Zhong
+UtorID: zhongxuj
+fbb1e8c849eafe0e508daf34618b1e768d0d7854
+Discussion:
+    The starvation can happen when using this mornitor. 
+    (1) crossing: If there is always a car passing from west to east, or from west to 
+    south and there is alaways a car passing from south to east or from south to north. 
+    Then quadrant 3 and quadrant 4 are alaways locked.For those cars wants to go from 
+    north to south or from west to south, they will be starving.
+
+    (2) arriving: If starvation happens on crossing stages, then the starved lane's
+     buffer will be full all the time. So its in_cars will never have a chance to
+     go into the buffer.
